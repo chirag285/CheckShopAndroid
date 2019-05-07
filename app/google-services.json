@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "174733077076",
+    "firebase_url": "https://check-shop-285.firebaseio.com",
+    "project_id": "check-shop-285",
+    "storage_bucket": "check-shop-285.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174733077076:android:275fb2c852a010ca",
+        "android_client_info": {
+          "package_name": "com.example.checkshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174733077076-u3i8vogcek6lfebbo551gnmk5sc3gvd6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.checkshop",
+            "certificate_hash": "d7dfd920d45abb01f0260c5581ec182e92f4c8d0"
+          }
+        },
+        {
+          "client_id": "174733077076-c90ne7qt5eatprjo3q15970e11meq5b8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4l_WZovlk4oo9pupnU-2proDelySr9s8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174733077076-c90ne7qt5eatprjo3q15970e11meq5b8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
