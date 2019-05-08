@@ -29,7 +29,6 @@ public class BuyerSignUpForm extends AppCompatActivity {
         Email = findViewById(R.id.email);
         Password = findViewById(R.id.password);
 
-
         mAuth = FirebaseAuth.getInstance();
         Button SignUp;
 
