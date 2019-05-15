@@ -12,9 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SellerHomePage"></activity>
-        <activity android:name=".BuyerHomePage" />
-        <activity android:name=".Seller_signUp_form" />
+        <activity android:name=".Buyers_cart"></activity>
+        <activity android:name=".Add_Products" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".Selller_SignUp_Form" />
         <activity android:name=".BuyerSignUpForm" />
         <activity android:name=".BuyerOrSeller" />
         <activity android:name=".MainActivity">

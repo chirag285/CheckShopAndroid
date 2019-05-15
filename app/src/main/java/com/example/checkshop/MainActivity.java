@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
         Button Login, SignUp;
 
-        username = findViewById(R.id.editText1);
-        password = findViewById(R.id.editText1);
-        Login = findViewById(R.id.login_button);
-        SignUp = findViewById(R.id.signUp_button);
+        username = findViewById(R.id.editText);
+        password = findViewById(R.id.editText3);
+        Login = findViewById(R.id.buttonbs);
+        SignUp = findViewById(R.id.button2);
 
         mAuth = FirebaseAuth.getInstance();
 

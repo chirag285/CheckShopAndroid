@@ -6,75 +6,139 @@
     android:layout_height="match_parent"
     tools:context=".BuyerSignUpForm">
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="320dp"
-        android:layout_height="57dp"
+    <Button
+        android:id="@+id/buttons"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="352dp"
+        android:layout_height="53dp"
         android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="CREATE ACCOUNT"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="330dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="540dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422" />
+        app:layout_constraintVertical_bias="0.88" />
 
     <EditText
-        android:id="@+id/password"
-        android:layout_width="320dp"
-        android:layout_height="57dp"
+        android:id="@+id/editText2"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="335dp"
+        android:layout_height="49dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Full Name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.085" />
 
-    <Button
-        android:id="@+id/SignUp1"
-        android:layout_width="320dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimary"
-        android:text="Sign Up"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.769" />
+        app:layout_constraintVertical_bias="0.288" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="320dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="8dp"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="329dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Enter Following Information"
-        android:textColor="@android:color/black"
-        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.579">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="218dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="MALE" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FEMALE" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="218dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="OTHERS" />
+    </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>
