@@ -7,7 +7,7 @@
     tools:context=".BuyerSignUpForm">
 
     <Button
-        android:id="@+id/buttons"
+        android:id="@+id/SignUp1"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="352dp"
         android:layout_height="53dp"
@@ -29,7 +29,7 @@
 
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/email"
         android:layout_width="330dp"
         android:layout_height="49dp"
         android:layout_marginStart="39dp"
@@ -49,7 +49,7 @@
         app:layout_constraintVertical_bias="0.88" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/uuu"
         android:layout_width="332dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
@@ -68,45 +68,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.392" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="335dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="Full Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="332dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="Mobile Number"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
-
     <RadioGroup
+        android:visibility="gone"
         android:id="@+id/radioGroup"
         android:layout_width="329dp"
         android:layout_height="106dp"

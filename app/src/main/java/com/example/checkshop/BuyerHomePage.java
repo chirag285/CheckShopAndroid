@@ -10,5 +10,7 @@ public class BuyerHomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buyer_home_page);
 
+
+
     }
 }

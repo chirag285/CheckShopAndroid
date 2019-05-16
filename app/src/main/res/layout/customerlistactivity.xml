@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        n1:id="@+id/barlay"
+        n1:layout_width="match_parent"
+        n1:layout_height="wrap_content"
+        n1:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            n1:id="@+id/toolbar"
+            n1:layout_width="match_parent"
+            n1:layout_height="50dp"
+            n1:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Add Product" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        n1:layout_below="@+id/barlay"
+
+        n1:layout_width="match_parent"
+        n1:layout_centerInParent="true"
+        n1:layout_height="wrap_content">
+        <ListView
+            n1:id="@+id/lv_languages"
+            n1:layout_height="wrap_content"
+            n1:layout_width="match_parent">
+        </ListView>
+    </RelativeLayout>
+    <!--<android.support.design.widget.FloatingActionButton
+        n1:id="@+id/fab"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentBottom="true"
+        n1:layout_alignParentRight="true"
+        n1:layout_margin="16dp"
+        app:backgroundTint="@color/white"
+        n1:src="@android:drawable/ic_input_add" />-->
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/indication"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+              android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/im_language"
+                android:layout_width="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="70dp" />
+
+
+            <TextView
+                android:id="@+id/productname"
+                android:layout_toRightOf="@+id/im_language"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="ABCD"
+                />
+        <TextView
+                android:id="@+id/produxtdis"
+            android:layout_below="@+id/productname"
+                android:layout_toRightOf="@+id/im_language"
+                android:layout_marginLeft="20dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+                android:text="ABCD"
+                />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produxtdis"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/im_language"
+                android:text="Cost              :"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        <TextView
+                android:id="@+id/cost"
+            android:layout_below="@+id/produxtdis"
+                android:layout_toRightOf="@+id/quantity"
+                android:layout_marginLeft="10dp"
+               android:text="Cost"
+               android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        <TextView
+                android:id="@+id/avilability"
+            android:layout_below="@+id/quantity"
+                android:layout_toRightOf="@+id/im_language"
+                android:layout_marginLeft="20dp"
+            android:text="Availability   :"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/avi"
+                android:layout_below="@+id/quantity"
+                android:layout_toRightOf="@+id/avilability"
+                android:layout_marginLeft="10dp"
+                android:text="Cost"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <!--<View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/avilability"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_300"
+                ></View>
+
+            <TextView
+                android:id="@+id/vname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:gravity="bottom"
+                android:text="Agilator : Shilpa"
+                android:textColor="@color/grey_600"
+                android:textSize="14dp" />
+       <TextView
+                android:id="@+id/distance"
+                android:layout_below="@+id/view"
+               android:layout_alignParentRight="true"
+           android:layout_marginRight="10dp"
+                android:text="0 Km"
+                android:layout_marginTop="3dp"
+                android:textSize="14dp"
+                android:textColor="@color/grey_600"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />-->
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

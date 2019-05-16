@@ -1,0 +1,50 @@
+package utils;
+import java.util.ArrayList;
+
+
+public class Constants {
+    public static final String ARG_USERS = "users";
+    public static final String ARG_USERSs = "users";
+    public static final String ARG_RECEIVER = "receiver";
+    public static final String ARG_RECEIVER_UID = "receiver_uid";
+    public static final String ARG_CHAT_ROOMS = "chat_rooms";
+    public static final String ARG_FIREBASE_TOKEN = "firebaseToken";
+    public static final String ARG_FRIENDS = "friends";
+    public static final String ARG_UID = "uid";
+    public static String Product_Name = " ";
+    public static String Description = " ";
+    public static String Cost = " ";
+    public static String Availability = " ";
+    public static String img = " ";
+    public static int pos = 0;
+    public static int vlues =0;
+    public static String Type =" ";
+    public static String passwords = " ";
+    public static String CompanyName = " ";
+    public static String NUM= " ";
+    public static String Dates=" ";
+    public static String HitsVal=" ";
+    public static int HashNum=1;
+    public static String Packages= " ";
+    public static String lat = " ";
+    public static ArrayList<String> arrayList = new ArrayList<>();
+    public static String lon = " ";
+    public static String EMAIL = " ";
+    public static String PASSWORD = " ";
+    public static String LAT = "0.0";
+    public static String LONGS= "0.0";
+    public static String timefrom= " ";
+    public static String timeto= " ";
+    public static String SlotFrom= " ";
+    public static String SlotTo= " ";
+    public static String WL= " ";
+    public static String Uname= " ";
+    public static String ShopName= " ";
+    public static String ShoppersonName= " ";
+    public static String Shopcontactphoto= " ";
+    public static String itemcost= " ";
+    public static String itemimage= " ";
+    //public static double lon = 0.0;
+   // public static ArrayList<RowItemCustomer> listdata=new ArrayList<>();
+    public static ArrayList<String> listdatausers=new ArrayList<>();
+}
