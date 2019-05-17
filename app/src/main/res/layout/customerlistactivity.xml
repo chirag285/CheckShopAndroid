@@ -24,11 +24,13 @@
         n1:layout_width="match_parent"
         n1:layout_centerInParent="true"
         n1:layout_height="wrap_content">
-        <ListView
+        <GridView
             n1:id="@+id/lv_languages"
             n1:layout_height="wrap_content"
-            n1:layout_width="match_parent">
-        </ListView>
+            n1:layout_width="match_parent"
+            n1:numColumns="2">
+        </GridView>
+
     </RelativeLayout>
     <!--<android.support.design.widget.FloatingActionButton
         n1:id="@+id/fab"

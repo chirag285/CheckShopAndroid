@@ -76,9 +76,35 @@ public class CustomerListProductAdapter extends ArrayAdapter<RowItemCustomer> {
         if(!rowItem.getContactPhoto().equalsIgnoreCase(null))
         {
             Uri uri = Uri.parse(rowItem.getContactPhoto());*/
-        Uri uri = Uri.parse(rowItem.getContactPhoto());
-            Picasso.with(context).load(uri).resize(70, 70).into(holder.im_language);
+       // Uri uri = Uri.parse(rowItem.getContactPhoto());
+           // Picasso.with(context).load(uri).resize(70, 70).into(holder.im_language);
+        if(position==0) {
+            holder.im_language.setImageResource(R.drawable.s1);
+        }
+        else if(position==1) {
+            holder.im_language.setImageResource(R.drawable.s2);
+        }
 
+        else if(position==2) {
+            holder.im_language.setImageResource(R.drawable.s3);
+        }
+
+        else if(position==3) {
+            holder.im_language.setImageResource(R.drawable.s4);
+        }
+
+        else if(position==4) {
+            holder.im_language.setImageResource(R.drawable.s5);
+        }
+        else if(position==5) {
+            holder.im_language.setImageResource(R.drawable.s6);
+        }
+        else if(position==6) {
+            holder.im_language.setImageResource(R.drawable.s7);
+        }
+        else if(position==7) {
+            holder.im_language.setImageResource(R.drawable.s8);
+        }
         return convertView;
     }
 

@@ -29,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -56,47 +55,32 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startSignIn();
             }
-        });
-    }
-        private void startSignIn()
-        {
-            String mEmail = username.getText().toString();
-            String mPassword = password.getText().toString();
 
-            if(TextUtils.isEmpty(mEmail)  || TextUtils.isEmpty(mPassword))
-            {
-                Toast.makeText(MainActivity.this,"Fields are Empty",Toast.LENGTH_LONG).show();
+            private void startSignIn() {
+                String mEmail = username.getText().toString();
+                String mPassword = password.getText().toString();
 
-            } else
-            {
-                mAuth.signInWithEmailAndPassword(mEmail,mPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful())
-                        {
-                            Log.e("innnn",flag);
-                            /*if(flag.matches("Buyer"))
-                            {
-                                Intent oo = new Intent(MainActivity.this, BuyerHomePage.class);
+                if (TextUtils.isEmpty(mEmail) || TextUtils.isEmpty(mPassword)) {
+                    Toast.makeText(MainActivity.this, "Fields are Empty", Toast.LENGTH_LONG).show();
+
+                } else {
+                    mAuth.signInWithEmailAndPassword(mEmail, mPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+
+                                Intent oo = new Intent(MainActivity.this, BuyerPage.class);
                                 startActivity(oo);
+                                Toast.makeText(MainActivity.this, "Sign In Successfull", Toast.LENGTH_LONG).show();
+                            } else {
+                                Toast.makeText(MainActivity.this, "Information Is Incorrect", Toast.LENGTH_LONG).show();
                             }
-                            else if(flag.matches("Seller"))
-                            {*/
-                                /*Intent oo = new Intent(MainActivity.this, SellerHomePage.class);
-                                startActivity(oo);*/
-                            Intent oo = new Intent(MainActivity.this, BuyerPage.class);
-                                startActivity(oo);
-                            //}
-                            Toast.makeText(MainActivity.this,"Sign In Successfull",Toast.LENGTH_LONG).show();
-                        } else
-                        {
-                            Toast.makeText(MainActivity.this,"Information Is Incorrect",Toast.LENGTH_LONG).show();
                         }
-                    }
-                });
+                    });
+                }
             }
-        }
+        });
+    }}
         //Test Commit Two
         //Test Commit Three
-    }
 

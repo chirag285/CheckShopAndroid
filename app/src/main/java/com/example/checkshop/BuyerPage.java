@@ -20,6 +20,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -60,7 +61,7 @@ public class BuyerPage extends AppCompatActivity {
     DatabaseReference reference;
     Query query;
     ArrayList<RowItemCustomer> list;
-    ListView lv_languages;
+    GridView lv_languages;
     public static int selectedPosition = 0;
     private FirebaseAuth mAuth;
     SparseBooleanArray sparseBooleanArray;
@@ -79,13 +80,18 @@ public class BuyerPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.customerlistactivity);
+
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
+
         mAuth = FirebaseAuth.getInstance();
+
         mDatabase = FirebaseDatabase.getInstance();
         mDb = mDatabase.getReference();
         reference = mDatabase.getReference();
+
         FirebaseUser user = mAuth.getCurrentUser();
+
         String userKey = user.getUid();
 
         sharedpreferences = getSharedPreferences(mypreference,
@@ -96,8 +102,8 @@ public class BuyerPage extends AppCompatActivity {
         list = new ArrayList<RowItemCustomer>();
 
         lv_languages = findViewById(R.id.lv_languages);
-        lv_languages.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
-        lv_languages.setItemsCanFocus(false);
+      lv_languages.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+       // lv_languages.setItemsCanFocus(false);
 
         String myUrl = "https:/check-shop-285.firebaseio.com/Product.json";
 

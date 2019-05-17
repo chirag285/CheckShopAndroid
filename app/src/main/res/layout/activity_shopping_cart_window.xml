@@ -58,12 +58,12 @@
 
     </LinearLayout>
 
-    <ListView
+    <GridView
         android:id="@+id/shoppingCartList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/paymentDetails">
 
-    </ListView>
+    </GridView>
 
 </RelativeLayout>

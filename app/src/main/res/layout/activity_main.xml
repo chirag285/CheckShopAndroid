@@ -25,8 +25,8 @@
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="357dp"
-        android:layout_height="77dp"
+        android:layout_width="292dp"
+        android:layout_height="69dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -42,8 +42,8 @@
 
     <Button
         android:id="@+id/buttonbs"
-        android:layout_width="357dp"
-        android:layout_height="77dp"
+        android:layout_width="292dp"
+        android:layout_height="69dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -58,8 +58,8 @@
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="357dp"
-        android:layout_height="77dp"
+        android:layout_width="292dp"
+        android:layout_height="69dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -75,8 +75,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="357dp"
-        android:layout_height="77dp"
+        android:layout_width="292dp"
+        android:layout_height="69dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
